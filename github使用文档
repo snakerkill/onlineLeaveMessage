@@ -1,0 +1,31 @@
+安装github软件
+##########配置用户信息
+#提交时的用户和用户名
+git config --global user.name "test"
+git config --global user.email "user@test.com"
+##########创建一个repository(仓库)
+mkdir www
+cd www
+#sets up the necessary git files
+#Initialized empty Git repository in www
+git init
+##########添加文件，提交
+git add test.php
+git commit test.php "just for test"
+
+##########Push your commit################
+#So far everything you've done has been in your local #repository, meaning you still haven't done anything on #GitHub yet. To connect your local repository to your #GitHub account, you will need to set a remote for your #repository and push your commits to it:
+#######################################
+#给远程repository起一个别名origin
+git remote add origin https://github.com/username/Hello-World.git
+#sends your commits in the "master" branch to Github
+git push origin master
+
+#######################################
+使用在其它地方使用
+ssh-keygen -t rsa -C "注释"
+将.ssh/id_rsa.pub拷贝到github网站
+
+拷贝代码git clone git@github.com:snakerkill/hello.git
+
+
